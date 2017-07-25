@@ -1,0 +1,56 @@
+@import "custom-variables";
+
+.container{
+	max-width: $containerWidth;
+	padding: 0 15px;
+	margin-right: 0 auto;
+}
+
+.flex-container{
+	display: flex;
+	&.direction-row{
+		flex-direction: row;
+	}
+	&.space-between{
+		
+	}
+}
+
+.icon{
+	display: flex;
+}
+
+.header{
+	background: $generalColor;
+	padding: 3.5em 0;
+	height: 100px;
+}
+
+.add-task{
+	font-size: 1em;
+	width: 6em;
+	height: 6em;
+	background: $newTaskBg;
+	border-radius:  50%;
+	position: relative;
+	
+	
+	// display: flex;
+	// flex-direction: row;
+	// justify-content: center;
+	span{
+		display: inline-block;
+		width: 3em;
+		height: .4em;
+		background: #fff;
+		position: absolute;
+		top: 50%;
+		transform: rotate(90deg);
+		margin-left: -1.5em;
+		margin-top: -0.1em;
+		& + span{
+		transform: rotate(0deg);
+	}
+	}
+}
+
