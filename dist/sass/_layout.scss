@@ -3,7 +3,7 @@
 .container{
 	max-width: $containerWidth;
 	padding: 0 15px;
-	margin-right: 0 auto;
+	margin: 0 auto;
 }
 
 .flex-container{
@@ -12,7 +12,7 @@
 		flex-direction: row;
 	}
 	&.space-between{
-		
+		justify-content: space-between;
 	}
 }
 
@@ -24,6 +24,7 @@
 	background: $generalColor;
 	padding: 3.5em 0;
 	height: 100px;
+	position: relative;
 }
 
 .add-task{
@@ -31,9 +32,8 @@
 	width: 6em;
 	height: 6em;
 	background: $newTaskBg;
-	border-radius:  50%;
-	position: relative;
-	
+	border-radius: 50%;
+	transform: translateY(54%);
 	
 	// display: flex;
 	// flex-direction: row;
@@ -54,3 +54,31 @@
 	}
 }
 
+.user-nav{
+	display: flex;
+	flex-direction: row;
+	font-size: 3em;
+	color: #fff;
+	li{
+		& + li{
+			margin-left: 35px;
+		}
+		a{
+			line-height: .8em;
+		}
+	}
+}
+.toogle-task-type{
+	padding: 2.8em 0;
+	font-size: 1.8em;
+	@media(min-width: 1024px){
+		padding: 10em 0 8em 0;
+	}
+}
+.toogle-task-list{
+	display: flex;
+	flex-direction: row;
+	li{
+		color: #bebebe;
+	}
+}

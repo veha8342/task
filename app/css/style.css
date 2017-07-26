@@ -225,7 +225,7 @@ button {
 .container {
   max-width: 1230px;
   padding: 0 15px;
-  margin-right: 0 auto; }
+  margin: 0 auto; }
 
 .flex-container {
   display: -webkit-box;
@@ -238,6 +238,11 @@ button {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row; }
+  .flex-container.space-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .icon {
   display: -webkit-box;
@@ -248,7 +253,8 @@ button {
 .header {
   background: #00a2f4;
   padding: 3.5em 0;
-  height: 100px; }
+  height: 100px;
+  position: relative; }
 
 .add-task {
   font-size: 1em;
@@ -257,7 +263,9 @@ button {
   background: #ffbb00;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  position: relative; }
+  -webkit-transform: translateY(54%);
+      -ms-transform: translateY(54%);
+          transform: translateY(54%); }
   .add-task span {
     display: inline-block;
     width: 3em;
@@ -276,7 +284,38 @@ button {
               transform: rotate(0deg); }
 
 .user-nav {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 3em;
+  color: #fff; }
+  .user-nav li + li {
+    margin-left: 35px; }
+  .user-nav li a {
+    line-height: .8em; }
+
+.toogle-task-type {
+  padding: 2.8em 0;
+  font-size: 1.8em; }
+  @media (min-width: 1024px) {
+    .toogle-task-type {
+      padding: 10em 0 8em 0; } }
+
+.toogle-task-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .toogle-task-list li {
+    color: #bebebe; }
