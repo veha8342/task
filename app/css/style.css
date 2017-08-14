@@ -301,13 +301,41 @@ button {
     line-height: .8em; }
 
 .toogle-task-type {
-  padding: 2.8em 0;
-  font-size: 1.8em; }
+  padding: 5em 0; }
   @media (min-width: 1024px) {
     .toogle-task-type {
       padding: 10em 0 8em 0; } }
+  .toogle-task-type .toogle-task-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .toogle-task-type .toogle-task-list li {
+      color: #bebebe;
+      font-size: 1.8em;
+      font-family: 'sf_ui_textsemibold'; }
+      @media (min-width: 1024px) {
+        .toogle-task-type .toogle-task-list li {
+          font-size: 3em; } }
+      .toogle-task-type .toogle-task-list li.active {
+        color: #00a2f4; }
+      .toogle-task-type .toogle-task-list li + li {
+        margin-left: 5px; }
+        .toogle-task-type .toogle-task-list li + li::before {
+          content: "/";
+          display: inline-block;
+          margin-right: 5px;
+          color: #bebebe; }
 
-.toogle-task-list {
+.today-day {
+  background: #00a2f4;
+  padding: 1em 2em;
+  color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -316,6 +344,117 @@ button {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
-          flex-direction: row; }
-  .toogle-task-list li {
-    color: #bebebe; }
+          flex-direction: row;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  @media (min-width: 1024px) {
+    .today-day {
+      padding: 2em 10em; } }
+  .today-day .day {
+    font-family: 'sf_ui_displaybold';
+    font-size: 3.6em; }
+    @media (min-width: 1024px) {
+      .today-day .day {
+        font-size: 5em; } }
+  .today-day .month {
+    font-size: 1.8em; }
+    @media (min-width: 1024px) {
+      .today-day .month {
+        font-size: 3em; } }
+
+.all-task-wrap {
+  padding-top: 4em; }
+  @media (min-width: 1024px) {
+    .all-task-wrap {
+      padding-top: 5em; } }
+  .all-task-wrap .task {
+    width: 100%;
+    position: relative;
+    padding-left: 5.4em;
+    max-width: 600px; }
+    @media (min-width: 1024px) {
+      .all-task-wrap .task {
+        padding-left: 11.2em; } }
+    .all-task-wrap .task .task-header {
+      padding: 1.5em;
+      background: #ffbb00;
+      -webkit-border-radius: 1em;
+              border-radius: 1em;
+      color: #fff;
+      font-family: 'sf_ui_textlight';
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (min-width: 1024px) {
+        .all-task-wrap .task .task-header {
+          padding: 2em 3em; } }
+    .all-task-wrap .task .slide-toogle-btn {
+      font-size: .6em; }
+      @media (min-width: 1024px) {
+        .all-task-wrap .task .slide-toogle-btn {
+          font-size: 1.6em; } }
+    .all-task-wrap .task .short-task-text {
+      font-size: 1.4em;
+      -webkit-flex-basis: 80%;
+          -ms-flex-preferred-size: 80%;
+              flex-basis: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      @media (min-width: 1024px) {
+        .all-task-wrap .task .short-task-text {
+          font-size: 3em; } }
+    .all-task-wrap .task .remove {
+      font-size: 2em;
+      margin-top: -11px; }
+      @media (min-width: 1024px) {
+        .all-task-wrap .task .remove {
+          font-size: 3em; } }
+
+.to-do-time {
+  width: 3.33333em;
+  height: 3.33333em;
+  font-size: 1.2em;
+  background: #00a2f4;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  left: 0; }
+  @media (min-width: 1024px) {
+    .to-do-time {
+      font-size: 1.4em; } }

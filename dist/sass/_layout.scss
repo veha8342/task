@@ -15,18 +15,15 @@
 		justify-content: space-between;
 	}
 }
-
 .icon{
 	display: flex;
 }
-
 .header{
 	background: $generalColor;
 	padding: 3.5em 0;
 	height: 100px;
 	position: relative;
 }
-
 .add-task{
 	font-size: 1em;
 	width: 6em;
@@ -69,16 +66,130 @@
 	}
 }
 .toogle-task-type{
-	padding: 2.8em 0;
-	font-size: 1.8em;
+	padding: 5em 0;
 	@media(min-width: 1024px){
 		padding: 10em 0 8em 0;
 	}
-}
-.toogle-task-list{
-	display: flex;
-	flex-direction: row;
-	li{
-		color: #bebebe;
+	.toogle-task-list{
+		display: flex;
+		flex-direction: row;
+		li{
+			color: #bebebe;
+			font-size: 1.8em;
+			font-family: 'sf_ui_textsemibold';
+			@media(min-width: 1024px){
+				font-size: 3em;
+			}
+			&.active{
+				color: $generalColor;
+			}
+			& + li{
+				margin-left: 5px;
+				&::before{
+					content: "/";
+					display: inline-block;
+					margin-right: 5px;
+					color: #bebebe;
+				}
+			}
+		}
 	}
+}
+
+.today-day{
+  background: $generalColor;
+  padding: 1em 2em;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  @media(min-width: 1024px){
+    padding: 2em 10em;
+  }
+  .day{
+    font-family: 'sf_ui_displaybold';
+    font-size: 3.6em;
+    @media(min-width: 1024px){
+      font-size: 5em;
+    }
+  }
+
+  .month{
+    font-size: 1.8em;
+    @media(min-width: 1024px){
+      font-size: 3em;
+    }
+  }
+}
+
+.all-task-wrap {
+  padding-top: 4em;
+  @media(min-width: 1024px) {
+    padding-top: 5em;
+  }
+
+  .task {
+    width: 100%;
+    position: relative;
+    padding-left: 5.4em;
+    max-width: 600px;
+    @media(min-width: 1024px) {
+      padding-left: 11.2em;
+    }
+    .task-header {
+      padding: 1.5em;
+      background: $taskColor;
+      border-radius: 1em;
+      color: #fff;
+      font-family: 'sf_ui_textlight';
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media(min-width: 1024px) {
+        padding: 2em 3em;
+      }
+    }
+      .slide-toogle-btn {
+        font-size: .6em;
+        @media(min-width: 1024px) {
+          font-size: 1.6em;
+        }
+      }
+      .short-task-text {
+        font-size: 1.4em;
+        flex-basis: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media(min-width: 1024px) {
+          font-size: 3em;
+        }
+      }
+      .remove {
+        font-size: 2em;
+        margin-top: -11px;
+        @media(min-width: 1024px) {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+.to-do-time{
+  width: 3.33333em;
+  height: 3.33333em;
+  font-size: 1.2em;
+  background: $generalColor;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  @media(min-width: 1024px) {
+    font-size: 1.4em;
+  }
 }
