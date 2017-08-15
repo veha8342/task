@@ -369,22 +369,81 @@ button {
   @media (min-width: 1024px) {
     .all-task-wrap {
       padding-top: 5em; } }
-  .all-task-wrap .task {
-    width: 100%;
-    position: relative;
-    padding-left: 5.4em;
-    max-width: 600px; }
+
+.task {
+  width: 100%;
+  position: relative;
+  padding-left: 5.4em;
+  max-width: 600px; }
+  .task.open .task-content-wrap {
+    display: block; }
+  .task.open .task-header {
+    -webkit-border-radius: 1em 1em 0 0;
+            border-radius: 1em 1em 0 0; }
+  @media (min-width: 1024px) {
+    .task {
+      padding-left: 11.2em; } }
+  .task .task-header {
+    padding: 1.5em;
+    background: #ffbb00;
+    -webkit-border-radius: 1em;
+            border-radius: 1em;
+    color: #fff;
+    font-family: 'sf_ui_textlight';
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     @media (min-width: 1024px) {
-      .all-task-wrap .task {
-        padding-left: 11.2em; } }
-    .all-task-wrap .task .task-header {
-      padding: 1.5em;
-      background: #ffbb00;
-      -webkit-border-radius: 1em;
-              border-radius: 1em;
-      color: #fff;
-      font-family: 'sf_ui_textlight';
-      cursor: pointer;
+      .task .task-header {
+        padding: 2em 3em; } }
+    .task .task-header .slide-toogle-btn {
+      font-size: .6em; }
+      @media (min-width: 1024px) {
+        .task .task-header .slide-toogle-btn {
+          font-size: 1.6em; } }
+    .task .task-header .short-task-text {
+      font-size: 1.4em;
+      -webkit-flex-basis: 80%;
+          -ms-flex-preferred-size: 80%;
+              flex-basis: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      @media (min-width: 1024px) {
+        .task .task-header .short-task-text {
+          font-size: 3em; } }
+    .task .task-header .remove {
+      font-size: 2em;
+      margin-top: -11px; }
+      @media (min-width: 1024px) {
+        .task .task-header .remove {
+          font-size: 3em; } }
+  .task .task-content-wrap {
+    display: none;
+    padding: 1.5em;
+    -webkit-border-radius: 0 0 1em 1em;
+            border-radius: 0 0 1em 1em;
+    background: #fff;
+    color: #404040;
+    font-family: 'sf_ui_textlight';
+    font-size: 1.4em;
+    line-height: 1.3; }
+    .task .task-content-wrap .time-row {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -394,39 +453,10 @@ button {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media (min-width: 1024px) {
-        .all-task-wrap .task .task-header {
-          padding: 2em 3em; } }
-    .all-task-wrap .task .slide-toogle-btn {
-      font-size: .6em; }
-      @media (min-width: 1024px) {
-        .all-task-wrap .task .slide-toogle-btn {
-          font-size: 1.6em; } }
-    .all-task-wrap .task .short-task-text {
-      font-size: 1.4em;
-      -webkit-flex-basis: 80%;
-          -ms-flex-preferred-size: 80%;
-              flex-basis: 80%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis; }
-      @media (min-width: 1024px) {
-        .all-task-wrap .task .short-task-text {
-          font-size: 3em; } }
-    .all-task-wrap .task .remove {
-      font-size: 2em;
-      margin-top: -11px; }
-      @media (min-width: 1024px) {
-        .all-task-wrap .task .remove {
-          font-size: 3em; } }
 
 .to-do-time {
   width: 3.33333em;
