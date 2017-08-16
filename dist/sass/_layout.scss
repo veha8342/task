@@ -119,16 +119,26 @@
   }
 }
 
-.task-content{
-  overflow: auto;
-  height: calc(100vh - 218px);
-  @media(min-width: 1024px){
-    height: calc(100vh - 310px);
+.main{
+  padding-top: 218px;
+  @media(min-width: 1024px) {
+    padding-top: 310px;
   }
 }
 
 .all-task-wrap {
   padding: 4em 0;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 6em;
+    left: 2em;
+    bottom: 0;
+    width: 0;
+    border-left: 2px dashed $generalColor;
+    z-index: -1;
+  }
   @media(min-width: 1024px) {
     padding-top: 5em 0;
   }
@@ -199,7 +209,6 @@
       }
       .remove {
         font-size: 2em;
-        margin-top: -11px;
         @media(min-width: 1024px) {
           font-size: 3em;
         }
@@ -218,22 +227,20 @@
       @media(min-width: 1024px) {
         padding: 3em;
       }
+      .task-icon{
+        width: 20px;
+      }
       .icon{
         font-size: 1.42em;
-        line-height: .9em;
         margin-top: -4px;
-        @media(min-width: 1024px){
-          margin-top: -10px;
-        }
       }
       .time-row{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
         .time{
-          align-self: flex-end;
-          flex-basis: 70%;
+          width: 90%;
+          padding-left: 10px;
           @media(min-width: 640px){
             flex-basis: 85%;
           }
@@ -242,12 +249,20 @@
       .task-text-row{
         display: flex;
         flex-direction: row;
+        p{
+          width: 90%;
+          padding-left: 10px;
+        }
       }
       .task-check-row{
         display: flex;
         form{
           display: flex;
           flex-direction: row;
+          align-items: center;
+          label{
+            padding-left: 10px;
+          }
         }
         input[type="checkbox"]{
           display: none;

@@ -222,6 +222,17 @@ button {
 .icon-warning:before {
   content: ""; }
 
+.fixed-to-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff; }
+
+.blue-color {
+  color: #00a2f4; }
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -364,17 +375,24 @@ button {
       .today-day .month {
         font-size: 3em; } }
 
-.task-content {
-  overflow: auto;
-  height: -webkit-calc(100vh - 218px);
-  height: calc(100vh - 218px); }
+.main {
+  padding-top: 218px; }
   @media (min-width: 1024px) {
-    .task-content {
-      height: -webkit-calc(100vh - 310px);
-      height: calc(100vh - 310px); } }
+    .main {
+      padding-top: 310px; } }
 
 .all-task-wrap {
-  padding: 4em 0; }
+  padding: 4em 0;
+  position: relative; }
+  .all-task-wrap::before {
+    content: '';
+    position: absolute;
+    top: 6em;
+    left: 2em;
+    bottom: 0;
+    width: 0;
+    border-left: 2px dashed #00a2f4;
+    z-index: -1; }
   @media (min-width: 1024px) {
     .all-task-wrap {
       padding-top: 5em 0; } }
@@ -449,8 +467,7 @@ button {
         .task .task-header .short-task-text {
           font-size: 3em; } }
     .task .task-header .remove {
-      font-size: 2em;
-      margin-top: -11px; }
+      font-size: 2em; }
       @media (min-width: 1024px) {
         .task .task-header .remove {
           font-size: 3em; } }
@@ -469,13 +486,11 @@ button {
     @media (min-width: 1024px) {
       .task .task-content-wrap {
         padding: 3em; } }
+    .task .task-content-wrap .task-icon {
+      width: 20px; }
     .task .task-content-wrap .icon {
       font-size: 1.42em;
-      line-height: .9em;
       margin-top: -4px; }
-      @media (min-width: 1024px) {
-        .task .task-content-wrap .icon {
-          margin-top: -10px; } }
     .task .task-content-wrap .time-row {
       display: -webkit-box;
       display: -webkit-flex;
@@ -489,18 +504,10 @@ button {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
+              align-items: center; }
       .task .task-content-wrap .time-row .time {
-        -webkit-align-self: flex-end;
-            -ms-flex-item-align: end;
-                align-self: flex-end;
-        -webkit-flex-basis: 70%;
-            -ms-flex-preferred-size: 70%;
-                flex-basis: 70%; }
+        width: 90%;
+        padding-left: 10px; }
         @media (min-width: 640px) {
           .task .task-content-wrap .time-row .time {
             -webkit-flex-basis: 85%;
@@ -516,6 +523,9 @@ button {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; }
+      .task .task-content-wrap .task-text-row p {
+        width: 90%;
+        padding-left: 10px; }
     .task .task-content-wrap .task-check-row {
       display: -webkit-box;
       display: -webkit-flex;
@@ -530,7 +540,13 @@ button {
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
             -ms-flex-direction: row;
-                flex-direction: row; }
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .task .task-content-wrap .task-check-row form label {
+          padding-left: 10px; }
       .task .task-content-wrap .task-check-row input[type="checkbox"] {
         display: none; }
     .task .task-content-wrap .task-edit-row {

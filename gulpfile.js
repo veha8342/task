@@ -18,7 +18,10 @@ gulp.task('iconfont', function(){
             fontPath: '../fonts/'
         }))
         .pipe(iconfont({
-            fontName: fontName
+            fontName: fontName,
+            prependUnicode: true,
+            formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+            normalize: true,
         }))
         .pipe(gulp.dest('app/fonts/'));
 });

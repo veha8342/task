@@ -11,6 +11,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-css-iconfont": "0.0.1",
     "gulp-iconfont": "^8.0.1",
     "gulp-iconfont-css": "^2.1.0",
     "gulp-sass": "^3.1.0",
