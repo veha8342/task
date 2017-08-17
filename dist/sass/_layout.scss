@@ -129,7 +129,7 @@
 .all-task-wrap {
   padding: 4em 0;
   position: relative;
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 6em;
@@ -142,7 +142,28 @@
   @media(min-width: 1024px) {
     padding-top: 5em 0;
   }
-}
+  .task-wrap{
+    display: flex;
+    flex-direction: column;
+    .info-block{
+      display: flex;
+      padding: 2em 0 4em 5.4em;
+      color: $warningBg;
+      min-width: 200px;
+      align-items: center;
+      .info-icon{
+        font-size: 3em;
+      }
+      & > span{
+        font-size: 1.5em;
+        margin-left: 1.5em;
+        font-family: 'sf_ui_textregular';
+      }
+    }
+    @media(min-width: 1024px){
+      flex-direction: row;
+    }
+  }
   .task {
     width: 100%;
     position: relative;
@@ -208,9 +229,9 @@
         }
       }
       .remove {
-        font-size: 2em;
+        font-size: 1.5em;
         @media(min-width: 1024px) {
-          font-size: 3em;
+          font-size: 2.5em;
         }
       }
     }
@@ -272,6 +293,9 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        span{
+          margin-right: 2em;
+        }
       }
       & > *{
         & + *{
@@ -300,4 +324,4 @@
     font-size: 1.4em;
   }
 }
-
+}
