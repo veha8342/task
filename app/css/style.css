@@ -634,3 +634,80 @@ button {
     @media (min-width: 1024px) {
       .all-task-wrap .to-do-time {
         font-size: 1.4em; } }
+
+.inner-form {
+  width: 100%;
+  background: #e8f8ff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .inner-form .login-form {
+    padding: 7.5em 1.5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #fff;
+    margin-left: -4.5em; }
+    .inner-form .login-form .login {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border-bottom: 1px solid grey;
+      padding: 2em 0; }
+      .inner-form .login-form .login input {
+        margin-left: 0.5em;
+        font-size: 1.8em;
+        font-family: 'sf_ui_textlight'; }
+      .inner-form .login-form .login label {
+        font-size: 1.8em;
+        font-family: 'sf_ui_textlight'; }
+    .inner-form .login-form .password {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 2em;
+      border-bottom: 1px solid grey;
+      padding: 2em 0; }
+      .inner-form .login-form .password input {
+        margin-left: 0.5em;
+        font-size: 1.8em;
+        font-family: 'sf_ui_textlight'; }
+      .inner-form .login-form .password label {
+        font-size: 1.8em;
+        font-family: 'sf_ui_textlight'; }
