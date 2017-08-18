@@ -1,47 +1,30 @@
 @import "custom-variables";
 
-.inner-form{
+.inner-form {
   width: 100%;
   background: #e8f8ff;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  .login-form{
+  .login-form {
     padding: 7.5em 1.5;
     display: flex;
     flex-direction: row;
     background: #fff;
     margin-left: -4.5em;
-    .login{
+    .form-group {
       display: flex;
       flex-direction: row;
       align-items: center;
       border-bottom: 1px solid grey;
       padding: 2em 0;
-      input{
+      input {
         margin-left: 0.5em;
         font-size: 1.8em;
         font-family: 'sf_ui_textlight';
       }
-      label{
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight';
-      }
-    }
-    .password{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-top: 2em;
-      border-bottom: 1px solid grey;
-      padding: 2em 0;
-      input{
-        margin-left: 0.5em;
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight';
-      }
-      label{
+      label {
         font-size: 1.8em;
         font-family: 'sf_ui_textlight';
       }

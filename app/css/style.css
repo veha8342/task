@@ -664,7 +664,7 @@ button {
             flex-direction: row;
     background: #fff;
     margin-left: -4.5em; }
-    .inner-form .login-form .login {
+    .inner-form .login-form .form-group {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -680,34 +680,10 @@ button {
               align-items: center;
       border-bottom: 1px solid grey;
       padding: 2em 0; }
-      .inner-form .login-form .login input {
+      .inner-form .login-form .form-group input {
         margin-left: 0.5em;
         font-size: 1.8em;
         font-family: 'sf_ui_textlight'; }
-      .inner-form .login-form .login label {
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight'; }
-    .inner-form .login-form .password {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-top: 2em;
-      border-bottom: 1px solid grey;
-      padding: 2em 0; }
-      .inner-form .login-form .password input {
-        margin-left: 0.5em;
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight'; }
-      .inner-form .login-form .password label {
+      .inner-form .login-form .form-group label {
         font-size: 1.8em;
         font-family: 'sf_ui_textlight'; }
