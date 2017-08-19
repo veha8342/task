@@ -242,9 +242,9 @@ button {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 200px;
-  height: 30px;
-  background: blue;
+  width: 244px;
+  height: 4em;
+  background: #00a1f1;
   -webkit-border-radius: 0.5em;
           border-radius: 0.5em; }
 
@@ -651,8 +651,7 @@ button {
         font-size: 1.4em; } }
 
 .inner-form {
-  width: 100%;
-  background: #e8f8ff;
+  background: url("..//..//app/img/inner.bg");
   height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -667,7 +666,8 @@ button {
       -ms-flex-align: center;
           align-items: center; }
   .inner-form .login-form {
-    padding: 3em 1.5em;
+    margin: 3em 1.5em;
+    padding: 4.5em 1.5em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -679,68 +679,71 @@ button {
             flex-direction: row;
     background: #fff;
     -webkit-border-radius: 1em;
-            border-radius: 1em; }
-    .inner-form .login-form .form-group {
+            border-radius: 1em;
+    -webkit-box-shadow: 0px 5px 16.17px 4.83px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 5px 16.17px 4.83px rgba(0, 0, 0, 0.08); }
+  .inner-form .form-group {
+    max-width: 290px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+    .inner-form .form-group input {
+      margin-left: 3em;
+      font-family: 'sf_ui_textlight';
+      border-bottom: 1px solid grey;
+      padding-bottom: 0.833em; }
+    .inner-form .form-group label {
+      font-size: 2.5em;
+      font-family: 'sf_ui_textlight'; }
+  .inner-form .form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 4em;
+    color: #fff; }
+    .inner-form .form-btn input[type="checkbox"] {
+      display: none; }
+    .inner-form .form-btn .checkbox-icon {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: baseline;
-      -webkit-align-items: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline;
-      padding: 1em 0; }
-      .inner-form .login-form .form-group input {
-        margin-left: 0.5em;
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight';
-        border-bottom: 1px solid grey; }
-      .inner-form .login-form .form-group label {
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight'; }
-    .inner-form .login-form .form-btn {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      margin: 2em 0;
+      color: #000; }
+      .inner-form .form-btn .checkbox-icon .icon {
+        font-size: 1.8em; }
+    .inner-form .form-btn label {
+      color: #000;
+      font-size: 1.5em;
+      margin-left: 1.5em; }
+    .inner-form .form-btn a {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center;
-      margin-top: 2em;
-      color: #fff; }
-      .inner-form .login-form .form-btn input[type="checkbox"] {
-        display: none; }
-      .inner-form .login-form .form-btn .checkbox-icon {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        margin: 2em 0;
-        color: #000; }
-        .inner-form .login-form .form-btn .checkbox-icon .icon {
-          font-size: 1.8em; }
-      .inner-form .login-form .form-btn label {
-        color: #000;
-        font-size: 1.5em;
-        margin-left: 1em; }
-      .inner-form .login-form .form-btn a {
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        font-size: 1.8em; }
+              align-items: center; }
+    .inner-form .form-btn span {
+      font-size: 1.8em; }
