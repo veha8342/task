@@ -233,6 +233,21 @@ button {
 .blue-color {
   color: #00a2f4; }
 
+.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 30px;
+  background: blue;
+  -webkit-border-radius: 0.5em;
+          border-radius: 0.5em; }
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -652,7 +667,7 @@ button {
       -ms-flex-align: center;
           align-items: center; }
   .inner-form .login-form {
-    padding: 7.5em 1.5;
+    padding: 3em 1.5em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -663,7 +678,8 @@ button {
         -ms-flex-direction: row;
             flex-direction: row;
     background: #fff;
-    margin-left: -4.5em; }
+    -webkit-border-radius: 1em;
+            border-radius: 1em; }
     .inner-form .login-form .form-group {
       display: -webkit-box;
       display: -webkit-flex;
@@ -674,16 +690,57 @@ button {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row;
+      -webkit-box-align: baseline;
+      -webkit-align-items: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      padding: 1em 0; }
+      .inner-form .login-form .form-group input {
+        margin-left: 0.5em;
+        font-size: 1.8em;
+        font-family: 'sf_ui_textlight';
+        border-bottom: 1px solid grey; }
+      .inner-form .login-form .form-group label {
+        font-size: 1.8em;
+        font-family: 'sf_ui_textlight'; }
+    .inner-form .login-form .form-btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
-      border-bottom: 1px solid grey;
-      padding: 2em 0; }
-      .inner-form .login-form .form-group input {
-        margin-left: 0.5em;
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight'; }
-      .inner-form .login-form .form-group label {
-        font-size: 1.8em;
-        font-family: 'sf_ui_textlight'; }
+      margin-top: 2em;
+      color: #fff; }
+      .inner-form .login-form .form-btn input[type="checkbox"] {
+        display: none; }
+      .inner-form .login-form .form-btn .checkbox-icon {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 2em 0;
+        color: #000; }
+        .inner-form .login-form .form-btn .checkbox-icon .icon {
+          font-size: 1.8em; }
+      .inner-form .login-form .form-btn label {
+        color: #000;
+        font-size: 1.5em;
+        margin-left: 1em; }
+      .inner-form .login-form .form-btn a {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 1.8em; }

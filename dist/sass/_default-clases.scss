@@ -12,3 +12,12 @@
 .blue-color{
   color: $generalColor;
 }
+
+.btn{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 30px;
+  background: blue;
+  border-radius: 0.5em;
+}

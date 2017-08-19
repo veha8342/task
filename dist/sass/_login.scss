@@ -8,25 +8,54 @@
   justify-content: center;
   align-items: center;
   .login-form {
-    padding: 7.5em 1.5;
+    padding: 3em 1.5em;
     display: flex;
     flex-direction: row;
     background: #fff;
-    margin-left: -4.5em;
+    border-radius: 1em;
+
     .form-group {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      border-bottom: 1px solid grey;
-      padding: 2em 0;
+      align-items: baseline;
+      padding: 1em 0;
       input {
         margin-left: 0.5em;
         font-size: 1.8em;
         font-family: 'sf_ui_textlight';
+        border-bottom: 1px solid grey;
       }
       label {
         font-size: 1.8em;
         font-family: 'sf_ui_textlight';
+      }
+    }
+    .form-btn{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2em;
+      color: #fff;
+      input[type="checkbox"]{
+        display: none;
+      }
+      .checkbox-icon{
+        display: flex;
+        margin: 2em 0;
+        color: #000;
+        .icon{
+          font-size: 1.8em;
+        }
+      }
+      label{
+        color: #000;
+        font-size: 1.5em;
+        margin-left: 1em;
+      }
+      a{
+        align-items: center;
+        font-size: 1.8em;
       }
     }
   }
