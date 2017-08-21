@@ -651,7 +651,7 @@ button {
         font-size: 1.4em; } }
 
 .inner-form {
-  background: url("..//..//app/img/inner.bg");
+  background: url("../../app/img/inner-bg.png") no-repeat center;
   height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
