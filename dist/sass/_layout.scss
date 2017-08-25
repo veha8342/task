@@ -409,8 +409,21 @@
   z-index: 99999;
   position: fixed;
   bottom: 0;
+  @media(max-height: 630px){
+    top: 0;
+    overflow: auto;
+}
   @media(min-width: 1024px){
     min-height: 50vh;
+  }
+  .close-edit{
+    width: 20px;
+    height: 20px;
+    background: red;
+    display: none;
+    @media(min-width: 630px){
+      display: block;
+    }
   }
   .title{
     font-size: 1.8em;
@@ -444,6 +457,47 @@
     @media(min-width: 1024px){
       margin-top: 0;
       padding-left: 2em;
+    }
+  }
+  .textarea-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    textarea{
+      border-bottom: 1px solid #9d9d9d;
+      max-width: 710px;
+      order: 2;
+      &:focus{
+        border-color: $generalColor;
+        & + label{
+          color: $generalColor;
+        }
+      }
+    }
+    label{
+      order: 1;
+      font-size: 1.4em;
+      color: #424242;
+    }
+    .symbol-count{
+      order: 3;
+      text-align: right;
+      max-width: 710px;
+    }
+  }
+  .edit-task-btn-wrap{
+    @media(min-width: 740px){
+      text-align: right;
+    }
+    .edit-task-btn{
+      background: $generalColor;
+      padding: 2em;
+      color: #fff;
+      width: 100%;
+      @media(min-width: 740px){
+        width: auto;
+        text-align: right;
+      }
     }
   }
 }
